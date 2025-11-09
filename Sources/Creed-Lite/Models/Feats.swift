@@ -75,11 +75,19 @@ public struct FeatUser: APIModel {
     public typealias Id = Tagged<Self, String>
     
     public let id: Id
+    public let name: String
+    public let location: String
+    public let team: String
+    public let totalWorkouts: Int
     public let imageURL: URL
     
     enum CodingKeys: String, CodingKey {
         case id
         case imageURL = "image_url"
+        case location
+        case name
+        case team
+        case totalWorkouts = "total_workouts"
     }
 }
 
