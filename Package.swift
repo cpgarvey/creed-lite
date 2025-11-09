@@ -32,7 +32,8 @@ let package = Package(
             ],
             resources: [
                 .copy("Responses/Sample Data/feats.json"),
-                .copy("Responses/Sample Data/leader_board.json"),
+                .copy("Responses/Sample Data/leader_board_all_time.json"),
+                .copy("Responses/Sample Data/leader_board_this_week.json"),
             ]
         ),
         .testTarget(

@@ -28,7 +28,7 @@ class FeatsClientTests: XCTestCase {
     
     func test_LeaderBoard_JSONParsing() async throws {
         let client = FeatsClient.testValue
-        let leaderboard = try await client.getFeatLeaderboard(Feat.Id(rawValue: "1"))
+        let leaderboard = try await client.getFeatLeaderboard(Feat.Id(rawValue: "this_week"))
         
         XCTAssertEqual(leaderboard.placements.count, 25)
     }
